@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		@import 'undo.css';
+		@import 'style.css';
+		img {
+			width: 100%;
+			height: auto;
+
+		}
+		.gallery{
+			display: flex;
+			flex-wrap: wrap;
+			width: 980px;
+			margin: 2rem auto;
+		}
+		.column{
+			width: calc(25% - 1rem);
+			flex: calc(25% - 1rem);
+			display: flex;
+			flex-direction: column;
+			flex-wrap: wrap;
+			padding: 0 0.5 rem;
+			gap: 10px;
+		}
+		.column > img {
+			transition: 0.5s ease-in-out;
+
+		}
+		.column > img:hover {
+			transform: scale(0.9);
+			filter: saturate(200%);
+		}
+	</style>
+</head>
+<body>
+		<header>
+		<nav>
+			<a href="index.html">Главная</a>
+			<a href="https://kiraharuka.github.io/">Аксолотли</a>
+			<a href="gallery.html"class="active">Галерея артов</a>
+			<a href="me.html">Ролик с танцем</a>
+
+		</nav>
+		<div class="header_img_container">
+			<img src="bright-moon.png" alt="">
+		</div>
+	</header>
+	<div class="gallery">
+
+		<div class="column">
+			<img src="https://i.pinimg.com/originals/18/5b/80/185b803bb24e9df2aad45f6464aac06d.jpg" alt="">
+			<img src="https://www.youloveit.ru/uploads/gallery/main/41/naruto_otakon_2010_poster_by_e.jpg" alt="">
+			<img src="https://sun9-36.userapi.com/impf/vlWwwJa2sW-4gXxyftCJm-M2wcGwE7zFMx_tmA/hI_QNhY-HH8.jpg?size=604x377&quality=96&sign=430fc6b07d099d8ed8554d215df68cc7&type=album" alt="">
+		</div>
+
+		<div class="column">
+			<img src="https://i.pinimg.com/originals/7a/ae/03/7aae03c68ad417497a8dff5b8b390b81.png" alt="">
+			<img src="https://slovnet.ru/wp-content/uploads/2018/08/12-71.jpg" alt="">
+			<img src="https://lh3.googleusercontent.com/hNGbPvNkFC6i0fpleyJPdjd3pFeV13zJZTKsz5jfxRkLdlM4y_4X7EhxnmJIHfYK__xH=w512" alt="">
+		</div>
+
+		<div class="column">
+			<img src="https://avatars.dzeninfra.ru/get-zen_doc/4368340/pub_604b323484ba3c6873485008_604b465b53bd6e5e97746cec/scale_1200" alt="">
+			<img src="https://damion.club/uploads/posts/2022-02/1645747681_6-damion-club-p-naruto-vse-personazhi-art-art-6.jpg" alt="">
+		</div>
+
+		<div class="column">
+			<img src="https://img4.goodfon.ru/wallpaper/nbig/d/54/anime-art-paren-naruto-naruto-naruto-uzumaki-personazhi.jpg" alt="">
+			<img src="https://pw.artfile.me/wallpaper/18-08-2016/650x462/anime-naruto-personazhi-1067971.jpg" alt="">
+		</div>
+
+	</div>
+<footer>
+		<div class="footer-container">
+			<h3>Социальные сети~</h3>
+      <div class="icons-container">
+      	<a href="https://vk.com/haru1833">VK</a>
+      	<a href="https://www.youtube.com/channel/UC2ndQHGwr-ybzgMSwa_0qjA/featured">YT</a>
+      </div>
+      <p>copyright &copy; 2022 Eva Ismoilova</p>
+		</div>
+	</footer>
+	
+</body>
+</html>
